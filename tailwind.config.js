@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         blue: "#003153",
+        gray: "#e6e6e9",
       },
       fontFamily: {
         sans: ["Noto Sans", "sans-serif"],

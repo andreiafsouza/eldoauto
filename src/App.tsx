@@ -1,3 +1,4 @@
+import Home from "./components/Home";
 import "./styles/main.css";
 import Navbar from "~/components/Navbar";
 
@@ -18,12 +19,7 @@ function App() {
     <div style={{ position: "relative" }}>
       <Navbar />
       <main>
-        <section
-          style={{ height: "100vh", width: "100%", background: "red" }}
-          id="home"
-        >
-          {/* Home content */}
-        </section>
+        <Home />
 
         <section
           style={{ height: "100vh", width: "100%", background: "blue" }}
