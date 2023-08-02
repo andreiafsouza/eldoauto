@@ -50,35 +50,41 @@ const Carousel = () => {
   return (
     <div className="relative w-full h-full">
       <div className="absolute top-[42%] w-full flex">
-        <div className="caret-left" onClick={previousSlide}>
+        <div
+          className="text-6xl absolute ml-5 flex items-center justify-center w-12 h-12 bg-transparent rounded-xl text-gray cursor-pointer select-none shadow-shadow"
+          onClick={previousSlide}
+        >
           {"<"}
         </div>
-        <div className="caret-right" onClick={nextSlide}>
+        <div
+          className="text-6xl absolute right-0 mr-5 flex items-center justify-center w-12 h-12 bg-transparent rounded-xl text-gray cursor-pointer select-none shadow-md"
+          onClick={nextSlide}
+        >
           {">"}
         </div>
       </div>
-      <div className="image-wrapper">
+      <div className="absolute w-[100%] h-[100%]">
         {SliderData.map((slide, index) => (
           <div key={index}>
             <div
               className={
                 index === current && index === 0
-                  ? "text-wrapper"
-                  : "text-hidden"
+                  ? "absolute w-full h-full top-0 left-1/2 transform -translate-x-1/2 max-w-[84rem] z-20"
+                  : "hidden"
               }
             >
-              <div className="text-box">
+              <div className="absolute top-0 max-w-md h-[45%] px-4 py-8 flex items-end justify-end rounded-3xl transition-all duration-100 ease-in-out">
                 <h1>Eficiência e dedicação para cuidar do seu veículo!</h1>
               </div>
             </div>
             <div
               className={
                 index === current && index === 1
-                  ? "text-second-slide"
-                  : "text-hidden"
+                  ? "absolute top-0 left-1/2 transform -translate-x-1/2 max-w-[84rem] w-full h-full z-50 flex justify-center"
+                  : "hidden"
               }
             >
-              <div className="text-second">
+              <div className="absolute top-[20%] w-full flex flex-col justify-center gap-8 transition-all duration-0 ease-in-out">
                 <h1>
                   Lanternagem, pintura e outros serviços para o seu veículo.
                 </h1>
