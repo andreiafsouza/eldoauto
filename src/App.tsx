@@ -21,10 +21,7 @@ function App() {
       <main>
         <Home />
 
-        <section
-          style={{ height: "100vh", width: "100%", background: "blue" }}
-          id="services"
-        >
+        <section className="h-screen w-full bg-blue" id="services">
           {/* Services content */}
         </section>
 
