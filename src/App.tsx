@@ -16,8 +16,11 @@ function App() {
   window.addEventListener("DOMContentLoaded", setNavHeight);
 
   return (
-    <div style={{ position: "relative" }}>
-      <Navbar />
+    <>
+      <header className="sticky top-0 bg-blue z-[9999]">
+        <Navbar />
+      </header>
+
       <main>
         <Home />
 
@@ -53,7 +56,7 @@ function App() {
           {/* Gallery content */}
         </section>
       </main>
-    </div>
+    </>
   );
 }
 

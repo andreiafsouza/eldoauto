@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import firstBanner from "../assets/banner-04.jpg";
 import secondBanner from "../assets/banner-05.jpg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { LinkScroll } from "./Links";
 
 interface Slide {
   id: number;
@@ -41,24 +42,24 @@ const Carousel = () => {
   };
 
   /* slider autoplay */
-  /*   useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
     }, 6000);
     return () => clearInterval(interval);
-  }, [current]); */
+  }, [current]);
 
   return (
     <div className="relative w-full h-full">
-      <div className="absolute top-[38%] sm:top-[42%] w-full flex z-50">
+      <div className="absolute top-1/2 -mt-[3.5rem] w-full flex z-50">
         <div
-          className="absolute ml-5 flex items-center justify-center w-12 h-12 bg-transparent rounded-xl text-gray cursor-pointer select-none shadow-md"
+          className="absolute ml-5 flex items-center justify-center w-12 h-12 bg-transparent rounded-xl text-gray cursor-pointer select-none shadow-[2px_4px_5px_rgba(0,0,0,0.4)]"
           onClick={previousSlide}
         >
           <ChevronLeft size={44} />
         </div>
         <div
-          className="absolute right-0 mr-5 flex items-center justify-center w-12 h-12 bg-transparent rounded-xl text-gray cursor-pointer select-none shadow-md"
+          className="absolute right-0 mr-5 flex items-center justify-center w-12 h-12 bg-transparent rounded-xl text-gray cursor-pointer select-none shadow-[2px_4px_5px_rgba(0,0,0,0.4)]"
           onClick={nextSlide}
         >
           <ChevronRight size={44} />
@@ -75,8 +76,10 @@ const Carousel = () => {
                   : "hidden"
               }
             >
-              <div className="absolute top-0 max-w-md h-[45%] px-4 py-8 flex items-end justify-end rounded-3xl transition-all duration-100 ease-in-out">
-                <h1>Eficiência e dedicação para cuidar do seu veículo!</h1>
+              <div className="absolute top-[20%] max-w-md px-4 py-8 flex items-end justify-end transition-all duration-100 ease-in-out">
+                <h1 className="drop-shadow-[4px_4px_5px_rgba(0,0,0,0.5)] text-[#8bd8f8b3] text-2xl md:text-3xl text-center">
+                  Eficiência e dedicação para cuidar do seu veículo!
+                </h1>
               </div>
             </div>
             <div
@@ -86,13 +89,11 @@ const Carousel = () => {
                   : "hidden"
               }
             >
-              <div className="px-4 absolute h-[30%] min-h-fit md:h-auto top-[20%] w-full flex flex-col justify-center gap-8 transition-all duration-0 ease-in-out">
+              <div className="px-4 absolute top-[20%] w-full flex flex-col justify-center gap-8 transition-all duration-0 ease-in-out">
                 <h1 className="text-2xl md:text-4xl lg:text-5xl text-center drop-shadow-[4px_4px_5px_rgba(0,0,0,0.5)] text-[#8bd8f8b3]">
                   Lanternagem, pintura e outros serviços para o seu veículo.
                 </h1>
-                <a href="#" data-nav="services">
-                  Services
-                </a>
+                <LinkScroll to="services" text="Serviços" variant="btn" />
               </div>
             </div>
             <div
@@ -112,12 +113,14 @@ const Carousel = () => {
           </div>
         ))}
       </div>
-      <div className="container-dots">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex z-50">
         {Array.from({ length: length }).map((_, index) => (
           <div
             key={index}
             onClick={() => moveDot(index)}
-            className={index === current ? "dot active" : "dot"}
+            className={`w-5 h-5 rounded-full border-[3px] border-[#f4f4f480] mx-1  ${
+              index === current ? "bg-blue" : "bg-[#f4f4f480]"
+            }`}
           ></div>
         ))}
       </div>
