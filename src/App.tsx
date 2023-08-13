@@ -1,4 +1,5 @@
 import Home from "./components/Home";
+import Services from "./components/Services";
 import "./styles/main.css";
 import Navbar from "~/components/Navbar";
 
@@ -24,9 +25,7 @@ function App() {
       <main>
         <Home />
 
-        <section className="h-screen w-full bg-blue" id="services">
-          {/* Services content */}
-        </section>
+        <Services />
 
         <section
           style={{ height: "100vh", width: "100%", background: "green" }}

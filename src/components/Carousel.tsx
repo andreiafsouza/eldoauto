@@ -51,7 +51,7 @@ const Carousel = () => {
 
   return (
     <div className="relative w-full h-full">
-      <div className="absolute top-1/2 -mt-[3.5rem] w-full flex z-50">
+      <div className="absolute top-[52%] -mt-[3.5rem] w-full flex z-50">
         <div
           className="absolute ml-5 flex items-center justify-center w-12 h-12 bg-transparent rounded-xl text-gray cursor-pointer select-none shadow-[2px_4px_5px_rgba(0,0,0,0.4)]"
           onClick={previousSlide}
