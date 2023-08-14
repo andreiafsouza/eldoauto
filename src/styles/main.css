@@ -6,4 +6,8 @@
   :root {
     --navHeight: 1rem;
   }
+
+  body {
+    color: #e6e6e9;
+  }
 }

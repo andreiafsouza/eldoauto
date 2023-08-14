@@ -6,7 +6,8 @@ export default {
       colors: {
         blue: "#003153",
         gray: "#e6e6e9",
-        shadow: "rgba(0, 0, 0, 0.5)",
+        shadow: "#24212440",
+        light: "#ffffff26",
       },
       fontFamily: {
         sans: ["Noto Sans", "sans-serif"],

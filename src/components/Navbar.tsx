@@ -45,7 +45,7 @@ const Navbar = () => {
         })}
       </div>
       <div className="flex items-center md:hidden">
-        <Menu size={36} className="text-zinc-200" />
+        <Menu size={36} />
       </div>
     </nav>
   );
