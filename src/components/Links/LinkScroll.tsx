@@ -1,12 +1,6 @@
 import useSmoothScroll from "~/hooks/useSmoothScroll";
 
-type LinkProps = {
-  to: string;
-  text: string;
-  variant?: "btn" | "link";
-};
-
-const LinkScroll = ({ to, text, variant }: LinkProps) => {
+const LinkScroll = ({ to, text, variant }: Link) => {
   const smoothScroll = useSmoothScroll();
 
   smoothScroll;
