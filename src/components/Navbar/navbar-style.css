@@ -1,0 +1,51 @@
+ul {
+  --_gap: 1rem;
+}
+
+ul li {
+  overflow: hidden;
+  position: relative;
+  padding-inline: calc(var(--_gap) / 2);
+  min-inline-size: 3rem;
+}
+
+ul li::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  bottom: -1px;
+  block-size: 3px;
+  background-color: #8bd8f8b3;
+
+  translate: var(--_translate, 0);
+  scale: var(--_scale, 0) 1;
+  transition: scale 100ms var(--_scale-delay, 0ms), translate 200ms;
+}
+
+/* A previous sibling is hovered */
+ul li:hover ~ li {
+  --_translate: -100%;
+  --_scale-delay: 200ms;
+}
+
+/* Any other sibling is hovered */
+ul:hover li {
+  --_translate: 100%;
+  --_scale-delay: 200ms;
+}
+
+/*
+  The actually hovered <li>
+
+  NOTE: same specificity as previous selector, so it must either come after or be artificially inflated (eg. :hover:hover)
+*/
+ul li:hover {
+  --_scale: 1;
+  --_translate: 0;
+  --_scale-delay: 0ms;
+}
+
+ul li.active::after {
+  --_scale: 1;
+}

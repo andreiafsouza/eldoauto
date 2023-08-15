@@ -7,7 +7,9 @@ const ServiceCard = ({ icon, title, description }: ServiceCard) => {
         </div>
       </div>
 
-      <h1 className="text-xl py-2 whitespace-nowrap">{title}</h1>
+      <h1 className="text-xl pb-2 pt-4 whitespace-nowrap text-accent-500">
+        {title}
+      </h1>
 
       <p className="text-left">{description}</p>
     </div>

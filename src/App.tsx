@@ -1,7 +1,7 @@
 import Home from "./components/Home";
 import Services from "./components/Services";
 import "./styles/main.css";
-import Navbar from "~/components/Navbar";
+import Navbar from "~/components/Navbar/Navbar";
 
 function App() {
   function setNavHeight() {

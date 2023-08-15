@@ -4,7 +4,7 @@ type ServiceCard = {
   description: string;
 };
 
-type Link = {
+type ScollLink = {
   to: string;
   text: string;
   variant?: "btn" | "link";

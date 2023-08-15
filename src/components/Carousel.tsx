@@ -77,7 +77,7 @@ const Carousel = () => {
               }
             >
               <div className="absolute top-[20%] max-w-md px-4 py-8 flex items-end justify-end transition-all duration-100 ease-in-out">
-                <h1 className="drop-shadow-[4px_4px_5px_rgba(0,0,0,0.5)] text-[#8bd8f8b3] text-2xl md:text-3xl text-center">
+                <h1 className="drop-shadow-[4px_4px_5px_rgba(0,0,0,0.5)] text-accent-opacity text-2xl md:text-3xl text-center">
                   Eficiência e dedicação para cuidar do seu veículo!
                 </h1>
               </div>
@@ -90,7 +90,7 @@ const Carousel = () => {
               }
             >
               <div className="px-4 absolute top-[20%] w-full flex flex-col justify-center gap-8 transition-all duration-0 ease-in-out">
-                <h1 className="text-2xl md:text-4xl lg:text-5xl text-center drop-shadow-[4px_4px_5px_rgba(0,0,0,0.5)] text-[#8bd8f8b3]">
+                <h1 className="text-2xl md:text-4xl lg:text-5xl text-center drop-shadow-[4px_4px_5px_rgba(0,0,0,0.5)] text-accent-opacity">
                   Lanternagem, pintura e outros serviços para o seu veículo.
                 </h1>
                 <LinkScroll to="services" text="Serviços" variant="btn" />

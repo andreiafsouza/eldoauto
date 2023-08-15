@@ -5,6 +5,10 @@ export default {
     extend: {
       colors: {
         blue: "#003153",
+        accent: {
+          500: "#8BD8F8",
+          opacity: "#8bd8f8b3",
+        },
         gray: "#e6e6e9",
         shadow: "#24212440",
         light: "#ffffff26",

@@ -42,10 +42,10 @@ const Services = () => {
   ];
 
   return (
-    <section className="w-full bg-blue" id="services">
+    <section className="w-full bg-sky-950" id="services">
       <div className="max-w-[84rem] p-4 mx-auto flex flex-col justify-center">
         <h1 className="text-2xl md:text-4xl text-center">Serviços</h1>
-        <h2 className="md:text-xl text-center py-4">
+        <h2 className="md:text-xl text-center py-6 italic">
           Conheça mais sobre os serviços que oferecemos.
         </h2>
         <div className="flex flex-col items-center justify-center gap-4 flex-wrap md:flex-row">
