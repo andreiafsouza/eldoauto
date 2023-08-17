@@ -1,16 +1,11 @@
 import { useState, useEffect } from "react";
 import firstBanner from "../assets/banner-04.jpg";
 import secondBanner from "../assets/banner-05.jpg";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { LinkScroll } from "./Links";
-
-interface Slide {
-  id: number;
-  url: string;
-  alt: string;
-}
+import { CaretRightBtn, CaretLeftBtn } from "./Buttons";
 
 const Carousel = () => {
+  const [current, setCurrent] = useState<number>(0);
   const SliderData: Slide[] = [
     {
       id: 999,
@@ -23,8 +18,6 @@ const Carousel = () => {
       alt: "Três recortes de imagens de serviços sendo aplicados á um veículo: na primeira a manutenção do motor, na segunda o polimento do capô, e na terceira a píntura da lateral",
     },
   ];
-
-  const [current, setCurrent] = useState<number>(0);
   const length: number = SliderData.length;
   const next: number = (current + 1) % length;
   const previous: number = (current - 1 + length) % length;
@@ -52,18 +45,8 @@ const Carousel = () => {
   return (
     <div className="relative w-full h-full">
       <div className="absolute top-[52%] -mt-[3.5rem] w-full flex z-50">
-        <div
-          className="absolute ml-5 flex items-center justify-center w-12 h-12 bg-transparent rounded-xl text-gray cursor-pointer select-none shadow-[2px_4px_5px_rgba(0,0,0,0.4)]"
-          onClick={previousSlide}
-        >
-          <ChevronLeft size={44} />
-        </div>
-        <div
-          className="absolute right-0 mr-5 flex items-center justify-center w-12 h-12 bg-transparent rounded-xl text-gray cursor-pointer select-none shadow-[2px_4px_5px_rgba(0,0,0,0.4)]"
-          onClick={nextSlide}
-        >
-          <ChevronRight size={44} />
-        </div>
+        <CaretLeftBtn onClick={previousSlide} />
+        <CaretRightBtn onClick={nextSlide} />
       </div>
       <div className="absolute w-full h-full">
         {SliderData.map((slide, index) => (
@@ -91,9 +74,13 @@ const Carousel = () => {
             >
               <div className="px-4 absolute top-[20%] w-full flex flex-col justify-center gap-8 transition-all duration-0 ease-in-out">
                 <h1 className="text-2xl md:text-4xl lg:text-5xl text-center drop-shadow-[4px_4px_5px_rgba(0,0,0,0.5)] text-accent-opacity">
-                  Lanternagem, pintura e outros serviços para o seu veículo.
+                  Lanternagem, pintura e muito mais para o seu veículo.
                 </h1>
-                <LinkScroll to="services" text="Serviços" variant="btn" />
+                <LinkScroll
+                  to="services"
+                  text="Conheça nossos serviços!"
+                  variant="btn"
+                />
               </div>
             </div>
             <div

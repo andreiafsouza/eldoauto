@@ -45,18 +45,6 @@ const Navbar = () => {
           const isHomeSection = section === "home";
           const isFullyVisible =
             rect.top <= navHeight && rect.bottom > navHeight;
-          console.log(
-            "Section:",
-            section,
-            "Chegou na section?: ",
-            rect.top <= navHeight,
-            "Tá AINDA na section? ",
-            rect.bottom > navHeight,
-            "TOP: ",
-            rect.top,
-            "BOTTOM: ",
-            rect.bottom
-          );
           // For the "home" section, check if it's at the top of the page
           if (
             isHomeSection &&
