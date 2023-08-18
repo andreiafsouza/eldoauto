@@ -8,7 +8,7 @@ type ButtonProps = ComponentProps<"button"> & {
 const ExpandBtn = ({ showText, ...props }: ButtonProps) => {
   return (
     <button
-      className="self-start flex mt-2 opacity-70 hover:opacity-100 transition-all select-none"
+      className="self-start flex mt-2 text-accent-opacity hover:text-accent-500 transition-color select-none"
       {...props}
     >
       {showText ? "Esconder" : "Continuar lendo"}

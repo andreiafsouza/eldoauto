@@ -13,6 +13,9 @@ export default {
         shadow: "#24212440",
         light: "#ffffff26",
       },
+      dropShadow: {
+        text: "2px 3px 4px rgba(0,0,0,0.4)",
+      },
       fontFamily: {
         sans: ["Noto Sans", "sans-serif"],
         serif: ["Merriweather", "serif"],

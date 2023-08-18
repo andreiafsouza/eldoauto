@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { InsuranceCard } from "./Cards";
 import { ChevronUp, ChevronDown } from "lucide-react";
-import "./insurance-style.css";
+import { ExpandBtn } from "./Buttons";
 
 const Insurance = () => {
   const [showText, setShowText] = useState(false);
@@ -62,16 +62,12 @@ const Insurance = () => {
               estresse durante momentos já desafiadores.
             </p>
           </div>
-          <button
-            onClick={handleShowText}
-            className="mx-auto lg:mx-0 mb-4 flex md:mb-2 opacity-70 hover:opacity-100 transition-opacity select-none"
-          >
-            {showText ? "Esconder" : "Continuar lendo"}
-            {showText ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
-          </button>
+          <div className="flex justify-center lg:justify-start">
+            <ExpandBtn onClick={handleShowText} showText={showText} />
+          </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4 flex-wrap md:flex-row lg:flex-[0.7] xl:flex-[0.55] lg:justify-evenly">
+        <div className="pt-6 flex flex-col items-center justify-center gap-4 flex-wrap md:flex-row lg:flex-[0.7] xl:flex-[0.55] lg:justify-evenly">
           {insuranceList.map((e, index) => {
             return <InsuranceCard key={index} name={e.name} link={e.link} />;
           })}

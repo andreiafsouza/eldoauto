@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ExpandBtn } from "../Buttons";
-import "./service-style.css";
 
 const ServiceCard = ({ icon, title, description }: ServiceCard) => {
   const [showText, setShowText] = useState(false);

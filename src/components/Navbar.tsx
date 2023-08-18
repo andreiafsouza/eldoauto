@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { LinkScroll } from "../Links";
+import { LinkScroll } from "./Links";
 import { Menu } from "lucide-react";
-import "./navbar-style.css";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -75,7 +74,7 @@ const Navbar = () => {
           </span>
         </a>
       </h1>
-      <ul className="hidden md:flex">
+      <ul className="nav hidden md:flex">
         {links.map((e, index) => {
           return (
             <li key={index} className={e.to === activeSection ? "active" : ""}>

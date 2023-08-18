@@ -1,8 +1,9 @@
+import About from "./components/About";
 import Home from "./components/Home";
 import Insurance from "./components/Insurance";
 import Services from "./components/Services";
 import "./styles/main.css";
-import Navbar from "~/components/Navbar/Navbar";
+import Navbar from "~/components/Navbar";
 
 function App() {
   function setNavHeight() {
@@ -30,21 +31,13 @@ function App() {
 
         <Insurance />
 
-        <section className="h-screen w-full bg-blue" id="about">
-          {/* About content */}
-        </section>
+        <About />
 
-        <section
-          style={{ height: "100vh", width: "100%", background: "purple" }}
-          id="contact"
-        >
+        <section className="w-full h-[800px]  bg-sky-950" id="contact">
           {/* Contact content */}
         </section>
 
-        <section
-          style={{ height: "100vh", width: "100%", background: "orange" }}
-          id="gallery"
-        >
+        <section className="w-full h-[800px] bg-sky-950" id="gallery">
           {/* Gallery content */}
         </section>
       </main>
