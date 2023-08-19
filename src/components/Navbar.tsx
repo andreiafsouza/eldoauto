@@ -74,7 +74,7 @@ const Navbar = () => {
           </span>
         </a>
       </h1>
-      <ul className="nav hidden md:flex">
+      <ul className="nav-list hidden md:flex">
         {links.map((e, index) => {
           return (
             <li key={index} className={e.to === activeSection ? "active" : ""}>

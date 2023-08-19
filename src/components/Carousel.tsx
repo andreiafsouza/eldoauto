@@ -43,7 +43,7 @@ const Carousel = () => {
   }, [current]);
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full max-w-[1800px]">
       <div className="absolute top-[52%] -mt-[3.5rem] w-full flex z-50">
         <CaretLeftBtn onClick={previousSlide} />
         <CaretRightBtn onClick={nextSlide} />
@@ -72,7 +72,7 @@ const Carousel = () => {
                   : "hidden"
               }
             >
-              <div className="px-4 absolute top-[20%] w-full flex flex-col justify-center gap-8 transition-all duration-0 ease-in-out">
+              <div className="px-4 absolute top-20 md:top-28 w-full flex flex-col justify-center gap-8 transition-all duration-0 ease-in-out">
                 <h1 className="text-2xl md:text-4xl lg:text-5xl text-center drop-shadow-[4px_4px_5px_rgba(0,0,0,0.5)] text-accent-opacity">
                   Lanternagem, pintura e muito mais para o seu veículo.
                 </h1>
@@ -93,7 +93,7 @@ const Carousel = () => {
                 <img
                   src={slide.url}
                   alt={slide.alt}
-                  className=" absolute w-full h-full object-cover"
+                  className="w-full h-full object-cover"
                 />
               )}
             </div>

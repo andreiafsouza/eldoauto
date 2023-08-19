@@ -1,5 +1,3 @@
-import useSmoothScroll from "~/hooks/useSmoothScroll";
-
 const PrimaryBtn = () => {
   return <div>PrimaryBtn</div>;
 };

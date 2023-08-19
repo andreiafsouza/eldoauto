@@ -1,10 +1,4 @@
-import useSmoothScroll from "~/hooks/useSmoothScroll";
-
 const LinkScroll = ({ to, text, variant }: LinkScroll) => {
-  const smoothScroll = useSmoothScroll();
-
-  smoothScroll;
-
   return (
     <a
       className={
@@ -13,7 +7,6 @@ const LinkScroll = ({ to, text, variant }: LinkScroll) => {
           : "text-base drop-shadow-lg opacity-90 hover:opacity-100 focus-visible:opacity-100"
       }
       href={`#${to}`}
-      data-nav={to}
       title={`Ir para ${text}`}
     >
       {text}
