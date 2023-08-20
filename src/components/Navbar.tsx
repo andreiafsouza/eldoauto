@@ -66,7 +66,7 @@ const Navbar = () => {
 
   return (
     <nav className="max-w-[84rem] px-4 py-2 flex gap-4 mx-auto items-center justify-between">
-      <h1 className="text-4xl text-accent-500">
+      <h1 className="text-4xl text-sky-300">
         <a href="#home" data-nav="home" title="Ir para Home">
           ea
           <span className="hidden px-2 text-sm text-zinc-200 sm:inline">

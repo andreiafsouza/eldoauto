@@ -13,19 +13,19 @@ const About = () => {
   const valuesList: ValuesProps[] = [
     {
       title: "Valores",
-      icon: <Blocks className="text-accent-500" strokeWidth={1} />,
+      icon: <Blocks className="text-sky-300" strokeWidth={1} />,
       description:
         "Integridade, qualidade e compromisso são a base de nossa oficina, criando confiança e resultados excepcionais para cada cliente.",
     },
     {
       title: "Visão",
-      icon: <SearchCheck className="text-accent-500" strokeWidth={1} />,
+      icon: <SearchCheck className="text-sky-300" strokeWidth={1} />,
       description:
         "Ser a principal referência em serviços automotivos em Contagem, combinando inovação, excelência técnica e satisfação do cliente.",
     },
     {
       title: "Missão",
-      icon: <Target className="text-accent-500" strokeWidth={1} />,
+      icon: <Target className="text-sky-300" strokeWidth={1} />,
       description:
         "Reparar e personalizar veículos com maestria e habilidade, superando expectativas com soluções únicas para cada cliente.",
     },
@@ -36,9 +36,9 @@ const About = () => {
   };
 
   return (
-    <section className="w-full bg-sky-950" id="about">
-      <div className="section max-w-[84rem] px-4  py-12 mx-auto flex flex-col justify-center">
-        <h1 className="text-3xl md:text-4xl font-bold text-accent-500 drop-shadow-md text-center">
+    <section className="py-[4rem] w-full bg-sky-950" id="about">
+      <div className="section max-w-[84rem] px-4 mx-auto flex flex-col justify-center">
+        <h1 className="text-4xl md:text-6xl text-sky-300 drop-shadow-text text-center">
           Nossa História
         </h1>
         <h2 className="md:text-xl text-center pt-4 pb-5 italic">
@@ -78,7 +78,7 @@ const About = () => {
                 className="mb-4 flex-1 flex flex-col gap-4 py-4 px-4 border-accent-opacity"
               >
                 <div className="w-full flex gap-4 ">
-                  <h2 className="flex items-center px-4 py-2 text-lg md:text-xl md:whitespace-nowrap text-accent-500 rounded-2xl bg-gradient-to-r from-[#00315340] to-[#2c689c1a] shadow-[2px_5px_5px_rgba(36,36,36,0.25)]">
+                  <h2 className="flex items-center px-4 py-2 text-lg md:text-xl md:whitespace-nowrap text-sky-300 rounded-2xl bg-gradient-to-r from-[#00315340] to-[#2c689c1a] shadow-[2px_5px_5px_rgba(36,36,36,0.25)]">
                     {e.title}
                   </h2>
 
@@ -87,7 +87,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <p className="text-sm text-accent-500">{e.description}</p>
+                <p className="text-sm text-sky-300">{e.description}</p>
               </div>
             );
           })}

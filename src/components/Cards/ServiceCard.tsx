@@ -19,7 +19,7 @@ const ServiceCard = ({ icon, title, description }: ServiceCard) => {
         </div>
       </div>
 
-      <h1 className="text-xl pb-2 pt-4 whitespace-nowrap text-accent-500">
+      <h1 className="text-xl pb-2 pt-4 whitespace-nowrap text-sky-300">
         {title}
       </h1>
 
@@ -28,7 +28,7 @@ const ServiceCard = ({ icon, title, description }: ServiceCard) => {
           {description}
         </p>
       </div>
-      <div className="self-start flex mt-2 text-accent-opacity hover:text-accent-500 transition-color select-none">
+      <div className="self-start flex mt-2 text-accent-opacity hover:text-sky-300 transition-color select-none">
         {showText ? "Esconder" : "Continuar lendo"}
         {showText ? (
           <ChevronUp size={24} className="transition-all" />

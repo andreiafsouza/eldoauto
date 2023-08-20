@@ -34,7 +34,7 @@ function App() {
 
     // Options for the Intersection Observer
     const sectionOptions: IntersectionObserverInit = {
-      rootMargin: -navigationHeight + "px",
+      rootMargin: navigationHeight + "px",
     };
 
     // Create the Intersection Observer
