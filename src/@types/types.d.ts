@@ -5,9 +5,10 @@ type Slide = {
 };
 
 type ServiceCard = {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   title: string;
   description: string;
+  image?: string;
 };
 
 type InsuranceCard = {

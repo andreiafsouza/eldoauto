@@ -36,7 +36,7 @@ const About = () => {
   };
 
   return (
-    <section className="py-[4rem] w-full bg-sky-950" id="about">
+    <section className="py-8 lg:py-16 w-full bg-sky-950" id="about">
       <div className="section max-w-[84rem] px-4 mx-auto flex flex-col justify-center">
         <h1 className="text-4xl md:text-6xl text-sky-300 drop-shadow-text text-center">
           Nossa História

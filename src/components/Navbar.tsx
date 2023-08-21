@@ -78,7 +78,7 @@ const Navbar = () => {
         {links.map((e, index) => {
           return (
             <li key={index} className={e.to === activeSection ? "active" : ""}>
-              <LinkScroll to={e.to} text={e.text} />
+              <LinkScroll href={`#${e.to}`}>{e.text}</LinkScroll>
             </li>
           );
         })}

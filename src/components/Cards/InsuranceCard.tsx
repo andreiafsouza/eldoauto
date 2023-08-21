@@ -1,5 +1,5 @@
 import { Car, ShieldCheck } from "lucide-react";
-import { LinkExternal } from "../Links";
+import { LinkScroll } from "../Links";
 
 const InsuranceCard = ({ name, link }: InsuranceCard) => {
   return (
@@ -15,13 +15,14 @@ const InsuranceCard = ({ name, link }: InsuranceCard) => {
         </div>
       </div>
 
-      <LinkExternal
-        text="Quer conhecer mais? Clique aqui."
+      <LinkScroll
         href={link}
         title={`Ir para ${name}`}
         target="_blank"
         variant="btn"
-      />
+      >
+        Quer conhecer mais? Clique aqui
+      </LinkScroll>
     </div>
   );
 };

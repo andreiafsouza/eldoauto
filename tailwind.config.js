@@ -16,7 +16,7 @@ export default {
         text: "2px 3px 4px rgba(0,0,0,0.4)",
       },
       fontFamily: {
-        sans: ["Noto Sans", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
         serif: ["Merriweather", "serif"],
       },
     },
