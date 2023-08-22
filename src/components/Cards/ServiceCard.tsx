@@ -9,8 +9,10 @@ const ServiceCard = ({ icon, title, description, image }: ServiceCard) => {
   };
 
   return (
-    <div className="overflow-hidden">
-      <img src={image} alt="" />
+    <div className="overflow-hidden rounded-t-2xl">
+      <div className="border">
+        <img src={image} className="w-full h-full object-cover" alt="" />
+      </div>
       <div className="p-4 border">
         <h2 className="text-xl text-sky-300">
           <button

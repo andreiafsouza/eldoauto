@@ -23,28 +23,28 @@ const Services = () => {
       description:
         "Através de um processo meticuloso, aplicamos camadas de tinta de alta qualidade para proteger a superfície do veículo contra corrosão e proporcionar um acabamento estético duradouro.",
       icon: <PaintIcon />,
-      image: "../../assets/repair.png",
+      image: repair,
     },
     {
       title: "Mecânica Leve",
       description:
         "Nossa equipe realiza diagnósticos precisos e executa uma variedade de procedimentos de manutenção, desde troca de óleo até substituição de peças, visando a otimização do desempenho e confiabilidade do veículo.",
       icon: <WrenchIcon />,
-      image: "../../assets/repair.png",
+      image: repair,
     },
     {
       title: "Alinhamento",
       description:
         "Ajustamos as configurações da suspensão e direção para garantir que as rodas estejam alinhadas de acordo com as especificações do fabricante, proporcionando estabilidade, controle e desgaste uniforme dos pneus.",
       icon: <AlignCarIcon />,
-      image: "../../assets/repair.png",
+      image: repair,
     },
     {
       title: "Balanceamento",
       description:
         "O nosso time elimina as irregularidades de peso que podem causar vibrações indesejadas, proporcionando uma condução suave, melhor aderência e prolongamento da vida útil dos componentes.",
       icon: <BalanceCarIcon />,
-      image: "../../assets/repair.png",
+      image: repair,
     },
   ];
 
@@ -60,7 +60,7 @@ const Services = () => {
           </h2>
         </div>
 
-        <div className="grid gap-[var(--size-fluid-2)]">
+        <div className="even-columns">
           {serviceList.map((e, index) => {
             return (
               <ServiceCard

@@ -143,6 +143,13 @@
   background-size: cover;
 }
 
+.even-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1rem;
+}
+
 .accordion-content {
   display: grid;
   grid-template-rows: 0fr;
