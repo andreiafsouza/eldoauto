@@ -100,31 +100,6 @@
   overflow: visible;
 }
 
-/* SHOWDOWN TEST */
-
-/* .wrapper-box {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 500ms;
-}
-
-.wrapper-box.expanded {
-  grid-template-rows: 1fr;
-}
-
-.preview {
-  opacity: 1;
-  transition: opacity 400ms ease-out;
-}
-
-.preview.close {
-  opacity: 0;
-}
-
-.wrapper-box > p {
-  overflow: hidden;
-} */
-
 .section {
   opacity: 0;
   transform: translateY(100px);
@@ -141,21 +116,4 @@
   background-image: url("../assets/banner-04.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.even-columns {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 1rem;
-}
-
-.accordion-content {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 500ms;
-}
-
-.accordion-content[aria-hidden="false"] {
-  grid-template-rows: 1fr;
 }

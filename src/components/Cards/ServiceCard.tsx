@@ -9,17 +9,19 @@ const ServiceCard = ({ icon, title, description, image }: ServiceCard) => {
   };
 
   return (
-    <div className="overflow-hidden rounded-t-2xl">
-      <div className="border">
-        <img src={image} className="w-full h-full object-cover" alt="" />
-      </div>
-      <div className="p-4 border">
-        <h2 className="text-xl text-sky-300">
+    <div
+      className={`overflow-hidden opacity-90 transition-colors hover:opacity-100 text-left hover:bg-slate-800 rounded-2xl ${
+        showContent ? "bg-slate-800" : ""
+      }`}
+    >
+      <div className="p-4">
+        <h2 className="text-2xl text-sky-300">
           <button
+            title={`Saiba mais sobre ${title}`}
             onClick={handleShowContent}
-            className="w-full flex items-center justify-between"
+            className="pb-2 w-full flex items-center justify-between border-b-[1px]"
             aria-expanded={showContent}
-            aria-controls="accordion1-content"
+            aria-controls={`service-content`}
           >
             {title}
             <ChevronDown
@@ -32,13 +34,12 @@ const ServiceCard = ({ icon, title, description, image }: ServiceCard) => {
           </button>
         </h2>
         <div
-          className="accordion-content"
-          role="region"
-          aria-labelledby="panel1-title"
+          className="grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 aria-hidden:grid-rows-[0fr]"
+          aria-labelledby={title}
           aria-hidden={!showContent}
-          id="panel1-content"
+          id={title}
         >
-          <div className="overflow-hidden">
+          <div className="overflow-hidden pt-2">
             <p>{description}</p>
           </div>
         </div>

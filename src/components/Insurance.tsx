@@ -4,7 +4,8 @@ import { ChevronUp, ChevronDown } from "lucide-react";
 import { ExpandBtn } from "./Buttons";
 
 const Insurance = () => {
-  const [showText, setShowText] = useState(false);
+  const [showContent, setShowContent] = useState(false);
+
   const insuranceList: InsuranceCard[] = [
     {
       name: "Allianz Seguros",
@@ -32,42 +33,69 @@ const Insurance = () => {
     },
   ];
 
-  const handleShowText = () => {
-    setShowText(!showText);
+  const handleShowContent = () => {
+    setShowContent(!showContent);
   };
 
   return (
-    <section className="py-8 lg:py-16 w-full bg-sky-950" id="insurance">
-      <div className="section px-4 max-w-[84rem] mx-auto flex flex-col justify-center lg:flex-row lg:justify-between lg:gap-2">
-        <div className="lg:flex-[0.3] xl:flex-[0.45]">
-          <h1 className="text-4xl md:text-6xl text-sky-300 drop-shadow-text text-center lg:text-left">
+    <section className="py-10 lg:py-20 w-full bg-blue" id="insurance">
+      <div className="section px-4 max-w-[84rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="text-center lg:text-left">
+          <h1 className="font-semibold text-4xl md:text-6xl text-sky-300">
             Seguradoras
           </h1>
-          <h2 className="md:text-xl text-center py-2 italic opacity-80 lg:text-left">
+          <h2 className="text-lg md:text-xl pt-4">
             As principais seguradoras do país são nossas credenciadas.
           </h2>
 
-          <div className={`box ${showText ? "open" : ""}`}>
-            <p
-              className={`preview-text text-center text-sm lg:text-base mb-4 text-gray lg:text-left ${
-                showText ? "show-text" : ""
-              }`}
-            >
-              Contar com uma seguradora pode trazer tranquilidade em momentos de
-              imprevistos. Danos ao veículo podem ocorrer a qualquer momento, e
-              contar com estas empresas garante que as despesas de reparo sejam
-              cobertas, evitando gastos financeiros inesperados. Além disso, uma
-              seguradora respeitável oferece um processo de sinistro eficiente e
-              suporte profissional, agilizando os procedimentos e reduzindo o
-              estresse durante momentos já desafiadores.
-            </p>
-          </div>
-          <div className="flex justify-center lg:justify-start">
-            <ExpandBtn onClick={handleShowText} showText={showText} />
+          <div
+            className={`overflow-hidden opacity-90 transition-colors hover:opacity-100 text-left hover:bg-slate-800 rounded-2xl ${
+              showContent ? "bg-slate-800" : ""
+            }`}
+          >
+            <div className="p-4">
+              <h2 className="text-xl text-sky-300">
+                <button
+                  title={`Saiba mais sobre Seguradoras`}
+                  onClick={handleShowContent}
+                  className="pb-2 flex items-center justify-between opacity-90 hover:opacity-100 leading-relaxed border-b-[1px]"
+                  aria-expanded={showContent}
+                  aria-controls={`service-content`}
+                >
+                  {"Por que devo utilizar os serviços de uma Seguradora?"}
+                  <ChevronDown
+                    className={
+                      showContent
+                        ? "transition-transform duration-500 rotate-180"
+                        : "transition-transform duration-500"
+                    }
+                  />
+                </button>
+              </h2>
+              <div
+                className="grid grid-rows-[1fr] transition-[grid-template-rows] duration-500 aria-hidden:grid-rows-[0fr]"
+                aria-labelledby={"Seguradoras"}
+                aria-hidden={!showContent}
+                id={"Seguradoras"}
+              >
+                <div className="overflow-hidden pt-2">
+                  <p>
+                    Contar com uma seguradora pode trazer tranquilidade em
+                    momentos de imprevistos. Danos ao veículo podem ocorrer a
+                    qualquer momento, e contar com estas empresas garante que as
+                    despesas de reparo sejam cobertas, evitando gastos
+                    financeiros inesperados. Além disso, uma seguradora
+                    respeitável oferece um processo de sinistro eficiente e
+                    suporte profissional, agilizando os procedimentos e
+                    reduzindo o estresse durante momentos já desafiadores.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="pt-6 flex flex-col items-center justify-center gap-4 flex-wrap md:flex-row lg:flex-[0.7] xl:flex-[0.55] lg:justify-evenly">
+        <div className="grid grid-cols-1 gap-5">
           {insuranceList.map((e, index) => {
             return <InsuranceCard key={index} name={e.name} link={e.link} />;
           })}
