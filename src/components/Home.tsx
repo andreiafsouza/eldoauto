@@ -3,7 +3,7 @@ import { LinkScroll } from "./Links";
 const Home = () => {
   return (
     <section className="-mt-[3.5rem]" id="home">
-      <div className="py-[14rem] px-4 bg-blue-900 bg-cover bg-no-repeat bg-[url(../assets/banner-04.jpg)]">
+      <div className="py-[14rem] px-4 bg-blue bg-cover bg-no-repeat bg-[url(../assets/banner-04.jpg)]">
         <div className="container max-w-[84rem] mx-auto">
           <h1 className="text-5xl lg:text-8xl font-semibold text-sky-300 drop-shadow-text">
             Lanternagem

@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import Navbar from "~/components/Navbar";
 import Contact from "./components/Contact";
 import "./styles/main.css";
+import Footer from "./components/Footer";
 
 function App() {
   const sectionRefs = useRef<NodeListOf<HTMLElement> | null>(null); // Ref to store section elements
@@ -76,11 +77,9 @@ function App() {
         <About />
 
         <Contact />
-
-        <section className="w-full h-[800px] bg-sky-950" id="gallery">
-          {/* Gallery content */}
-        </section>
       </main>
+
+      <Footer />
     </>
   );
 }
