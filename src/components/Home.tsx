@@ -14,7 +14,7 @@ const Home = () => {
           <h2 className="text-xl lg:text-2xl text-sky-200 py-1">
             Eficiência e dedicação para cuidar do seu veículo!
           </h2>
-          <div className="py-4">
+          <div className="py-4 w-fit">
             <LinkScroll href="#contact" variant="btn">
               Faça um orçamento
             </LinkScroll>

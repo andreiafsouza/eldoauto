@@ -7,7 +7,7 @@ import {
   BalanceCarIcon,
 } from "./Icons";
 import { ServiceCard } from "./Cards";
-import paintImage from "../assets/paint.jpg";
+import paintImage from "../assets/ea.jpg";
 
 const Services = () => {
   const serviceList: ServiceCard[] = [
@@ -44,16 +44,13 @@ const Services = () => {
   ];
 
   return (
-    <section
-      className="pt-10 pb-5 lg:pt-20 lg:pb-10 w-full bg-sky-950"
-      id="services"
-    >
+    <section className="py-10 lg:py-20 w-full bg-sky-950" id="services">
       <div className="section max-w-[84rem] px-4 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14">
         <div className="text-center lg:text-right">
-          <h1 className="pr-2 font-semibold text-4xl md:text-6xl text-sky-300">
+          <h1 className="pr-2 font-semibold text-4xl lg:text-6xl text-sky-300">
             Serviços
           </h1>
-          <h2 className=" pr-2 text-lg md:text-xl py-4">
+          <h2 className="pr-2 text-lg md:text-xl py-4">
             Conheça mais sobre os serviços que oferecemos selecionando-os
             abaixo.
           </h2>
@@ -71,9 +68,9 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="bg-sky-950">
           <img
-            className="w-full h-full object-cover rounded-b-2xl"
+            className="w-full h-full object-cover rounded-b-2xl mix-blend-hard-light"
             src={paintImage}
             alt=""
           />

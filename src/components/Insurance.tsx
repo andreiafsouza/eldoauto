@@ -38,38 +38,31 @@ const Insurance = () => {
   };
 
   return (
-    <section className="py-10 lg:py-20 w-full bg-blue" id="insurance">
-      <div className="section px-4 max-w-[84rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div className="text-center lg:text-left">
-          <h1 className="font-semibold text-4xl md:text-6xl text-sky-300">
+    <section className="py-10 lg:py-20 w-full bg-sky-950" id="insurance">
+      <div className="section px-4 max-w-[84rem] mx-auto grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+        <div className="text-center md:col-span-2 lg:col-auto lg:col-start-2 lg:row-start-2 lg:row-span-3">
+          <h1 className="font-semibold text-4xl lg:text-5xl xl:text-6xl text-sky-300">
             Seguradoras
           </h1>
-          <h2 className="text-lg md:text-xl pt-4">
+          <h2 className="text-lg lg:text-xl py-4">
             As principais seguradoras do país são nossas credenciadas.
           </h2>
 
           <div
-            className={`overflow-hidden opacity-90 transition-colors hover:opacity-100 text-left hover:bg-slate-800 rounded-2xl ${
+            className={`overflow-hidden opacity-90 transition-colors hover:opacity-100 border-[1px] border-transparent hover:border-sky-300 rounded-2xl ${
               showContent ? "bg-slate-800" : ""
             }`}
           >
             <div className="p-4">
-              <h2 className="text-xl text-sky-300">
+              <h2 className="text-lg text-sky-300">
                 <button
                   title={`Saiba mais sobre Seguradoras`}
                   onClick={handleShowContent}
-                  className="pb-2 flex items-center justify-between opacity-90 hover:opacity-100 leading-relaxed border-b-[1px]"
+                  className="w-full pb-2 flex items-center justify-between opacity-90 hover:opacity-100 leading-relaxed border-b-[1px]"
                   aria-expanded={showContent}
                   aria-controls={`service-content`}
                 >
-                  {"Por que devo utilizar os serviços de uma Seguradora?"}
-                  <ChevronDown
-                    className={
-                      showContent
-                        ? "transition-transform duration-500 rotate-180"
-                        : "transition-transform duration-500"
-                    }
-                  />
+                  Por que devo utilizar os serviços de uma Seguradora?
                 </button>
               </h2>
               <div
@@ -78,16 +71,14 @@ const Insurance = () => {
                 aria-hidden={!showContent}
                 id={"Seguradoras"}
               >
-                <div className="overflow-hidden pt-2">
+                <div className="overflow-hidden pt-2 text-left">
                   <p>
-                    Contar com uma seguradora pode trazer tranquilidade em
-                    momentos de imprevistos. Danos ao veículo podem ocorrer a
-                    qualquer momento, e contar com estas empresas garante que as
-                    despesas de reparo sejam cobertas, evitando gastos
-                    financeiros inesperados. Além disso, uma seguradora
-                    respeitável oferece um processo de sinistro eficiente e
-                    suporte profissional, agilizando os procedimentos e
-                    reduzindo o estresse durante momentos já desafiadores.
+                    Danos ao veículo podem ocorrer a qualquer momento e ter as
+                    despesas de reparo cobertas por uma empresa séria faz toda a
+                    diferença. Por isso é importante poder contar com uma
+                    seguradora respeitável, que ofereça processos de sinistro
+                    eficientes e suporte profissional, reduzindo o seu estresse
+                    e seus gastos durante momentos desafiadores.
                   </p>
                 </div>
               </div>
@@ -95,11 +86,9 @@ const Insurance = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-5">
-          {insuranceList.map((e, index) => {
-            return <InsuranceCard key={index} name={e.name} link={e.link} />;
-          })}
-        </div>
+        {insuranceList.map((e, index) => {
+          return <InsuranceCard key={index} name={e.name} link={e.link} />;
+        })}
       </div>
     </section>
   );

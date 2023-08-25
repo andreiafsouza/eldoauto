@@ -10,12 +10,12 @@ const ServiceCard = ({ icon, title, description, image }: ServiceCard) => {
 
   return (
     <div
-      className={`overflow-hidden opacity-90 transition-colors hover:opacity-100 text-left hover:bg-slate-800 rounded-2xl ${
+      className={`overflow-hidden opacity-90 transition-colors hover:opacity-100 text-left border-[1px] border-transparent hover:border-sky-300 rounded-2xl ${
         showContent ? "bg-slate-800" : ""
       }`}
     >
       <div className="p-4">
-        <h2 className="text-2xl text-sky-300">
+        <h2 className="text-xl text-sky-300">
           <button
             title={`Saiba mais sobre ${title}`}
             onClick={handleShowContent}
