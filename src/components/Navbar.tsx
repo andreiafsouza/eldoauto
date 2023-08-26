@@ -25,10 +25,6 @@ const Navbar = () => {
       to: "contact",
       text: "Contato",
     },
-    {
-      to: "gallery",
-      text: "Galeria",
-    },
   ];
 
   useEffect(() => {
@@ -69,7 +65,7 @@ const Navbar = () => {
       <h1 className="text-4xl text-sky-300">
         <a href="#home" data-nav="home" title="Ir para Home">
           ea
-          <span className="hidden px-2 text-sm text-zinc-200 sm:inline">
+          <span className="hidden px-2 text-lg text-zinc-200 sm:inline">
             Eldorado Automóveis
           </span>
         </a>

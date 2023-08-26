@@ -89,20 +89,3 @@
   opacity: 1;
   transform: translateY(0px);
 }
-
-.test {
-  position: relative;
-}
-
-.test::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100px;
-  background-color: #7dd3fc; /* Set background color */
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  opacity: 0.1;
-}

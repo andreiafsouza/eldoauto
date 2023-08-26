@@ -46,7 +46,7 @@ const Contact = () => {
 
             <div className="pt-4 flex gap-4 items-center lg:justify-end flex-wrap lg:flex-nowrap">
               <a
-                className="text-center bg-gradient-to-r from-[#003153CC] to-[#2c689c1a] shadow-[2px_5px_5px_rgba(36,36,36,0.25)] transition-colors border-[1px] border-transparent hover:border-sky-300 hover:text-sky-300 hover:bg-opacity-5 opacity-90 hover:opacity-100 w-full py-7 px-11 text-sky-300 rounded-2xl "
+                className="text-center bg-gradient-to-r from-[#00315340] to-[#2c689c1a] shadow-[2px_5px_5px_rgba(36,36,36,0.25)] transition-colors border-[1px] border-transparent hover:border-sky-300 hover:text-sky-300 hover:bg-opacity-5 opacity-90 hover:opacity-100 w-full py-7 px-11 text-sky-300 rounded-2xl "
                 title="Mandar mensagem para Eldorado Automóveis"
                 href="https://wa.me/553133512202"
               >
@@ -72,20 +72,20 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex flex-wrap gap-2 justify-center items-center">
-            <div className="border-2 border-sky-950 flex w-full text-sky-300 text-center lg:text-left text-sm lg:text-lg  bg-black bg-opacity-20 shadow-[1px_5px_5px_rgba(36,36,36,0.25)]  rounded-2xl">
-              <p className="p-4 bg-[#7dd3fc] font-semibold drop-shadow-text text-sky-950 rounded-2xl">
+            <div className="flex justify-center md:justify-normal w-full text-center lg:text-left text-sm lg:text-lg bg-white bg-opacity-5 shadow-[1px_5px_5px_rgba(36,36,36,0.25)] rounded-2xl">
+              <p className="p-4 flex-1 md:flex-none bg-white bg-opacity-10 font-semibold drop-shadow-text rounded-2xl">
                 Telefone
               </p>
-              <p className="p-4">(31) 3351-2202</p>
+              <p className="p-4 flex-1 md:flex-none">(31) 3351-2202</p>
             </div>
-            <div className="border-2 border-sky-950 flex w-full text-sky-300 text-center lg:text-left text-sm lg:text-lg  bg-black bg-opacity-20 shadow-[1px_5px_5px_rgba(36,36,36,0.25)]  rounded-2xl">
-              <p className="p-4 bg-[#7dd3fc] font-semibold drop-shadow-text text-sky-950 rounded-2xl">
+            <div className="flex justify-center md:justify-normal w-full text-center lg:text-left text-sm lg:text-lg bg-white bg-opacity-5 shadow-[1px_5px_5px_rgba(36,36,36,0.25)] rounded-2xl">
+              <p className="p-4 flex-1 md:flex-none bg-white bg-opacity-10 font-semibold drop-shadow-text rounded-2xl">
                 Email
               </p>
-              <p className="p-4">eldoauto@gmail.com</p>
+              <p className="p-4 flex-1 md:flex-none">eldoauto@gmail.com</p>
             </div>
 
-            <div className="border-2 border-sky-950 flex w-full text-sky-300 text-center lg:text-left text-sm lg:text-lg  bg-black bg-opacity-20 shadow-[1px_5px_5px_rgba(36,36,36,0.25)]  rounded-2xl">
+            <div className="flex w-full text-center text-sm lg:text-lg bg-white bg-opacity-5 shadow-[1px_5px_5px_rgba(36,36,36,0.25)] rounded-2xl">
               <p className="p-4">
                 Av. João César de Oliveira, 5555 - Beatriz, Contagem - MG.
               </p>

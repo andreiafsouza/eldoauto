@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         blue: "#003153",
+        bg: "rgb(8 47 73 )",
         accent: {
           opacity: "#8bd8f8b3",
         },
@@ -16,7 +17,7 @@ export default {
         text: "2px 3px 4px rgba(0,0,0,0.4)",
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["source-sans-pro", "Inter", "sans-serif"],
         serif: ["Merriweather", "serif"],
       },
     },

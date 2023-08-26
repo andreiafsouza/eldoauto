@@ -114,7 +114,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <p className="text-sm text-sky-300">{e.description}</p>
+                <p className="text-sky-300">{e.description}</p>
               </div>
             );
           })}
