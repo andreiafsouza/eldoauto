@@ -11,7 +11,7 @@ const LinkScroll = ({ variant, ...props }: LinkProps) => {
       className={
         variant && variant === "btn"
           ? "font-semibold bg-black bg-opacity-30 hover:bg-opacity-5 opacity-90 hover:opacity-100 focus-visible:opacity-100 transition-colors rounded-2xl py-3 px-5 shadow-lg flex items-center justify-center w-full text-center border-[1px] border-transparent hover:border-sky-300 hover:text-sky-300 md:whitespace-nowrap"
-          : "text-base drop-shadow-lg opacity-90 hover:opacity-100 focus-visible:opacity-100"
+          : "text-xl md:text-base drop-shadow-lg opacity-90 hover:opacity-100 focus-visible:opacity-100"
       }
       {...props}
     >

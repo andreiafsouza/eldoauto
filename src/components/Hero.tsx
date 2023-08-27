@@ -1,6 +1,6 @@
 import { LinkScroll } from "./Links";
 
-const Home = () => {
+const Hero = () => {
   return (
     <section className="-mt-[3.5rem]" id="home">
       <div className="py-[14rem] px-4 bg-blue bg-cover bg-no-repeat bg-[url(../assets/banner-04.jpg)]">
@@ -25,4 +25,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;
