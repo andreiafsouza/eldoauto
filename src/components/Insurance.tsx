@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { InsuranceCard } from "./Cards";
-import { ChevronUp, ChevronDown } from "lucide-react";
-import { ExpandBtn } from "./Buttons";
 
 const Insurance = () => {
   const [showContent, setShowContent] = useState(false);
@@ -38,7 +36,7 @@ const Insurance = () => {
   };
 
   return (
-    <section className="py-10 lg:py-20 w-full bg-sky-950" id="insurance">
+    <section className="py-10 lg:py-20 w-full" id="insurance">
       <div className="section px-4 max-w-[84rem] mx-auto grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
         <div className="text-center md:col-span-2 lg:col-auto lg:col-start-2 lg:row-start-2 lg:row-span-3">
           <h1 className="font-semibold text-4xl lg:text-5xl xl:text-6xl text-sky-300">
@@ -50,7 +48,7 @@ const Insurance = () => {
 
           <div
             className={`overflow-hidden opacity-90 transition-colors hover:opacity-100 border-[1px] border-transparent hover:border-sky-300 rounded-2xl ${
-              showContent ? "bg-slate-800" : ""
+              showContent ? "bg-slate-800 bg-opacity-50" : ""
             }`}
           >
             <div className="p-4">

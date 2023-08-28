@@ -35,7 +35,7 @@ const About = () => {
   };
 
   return (
-    <section className="py-10 lg:py-20 w-full bg-sky-950" id="about">
+    <section className="py-10 lg:py-20 w-full" id="about">
       <div className="section max-w-[84rem] px-4 mx-auto grid grid-cols-1  gap-4 lg:grid-cols-2  lg:gap-12">
         <div className="text-center lg:text-right">
           <h1 className="font-semibold text-4xl lg:text-6xl text-sky-300">
@@ -48,7 +48,7 @@ const About = () => {
         </div>
         <div
           className={`h-fit overflow-hidden opacity-90 transition-colors hover:opacity-100 border-[1px] border-transparent hover:border-sky-300 rounded-2xl ${
-            showContent ? "bg-slate-800" : ""
+            showContent ? "bg-slate-800 bg-opacity-50" : ""
           }`}
         >
           <div className="p-4">

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-const ServiceCard = ({ icon, title, description, image }: ServiceCard) => {
+const ServiceCard = ({ title, description }: ServiceCard) => {
   const [showContent, setShowContent] = useState(false);
 
   const handleShowContent = () => {
@@ -11,7 +11,7 @@ const ServiceCard = ({ icon, title, description, image }: ServiceCard) => {
   return (
     <div
       className={`overflow-hidden opacity-90 transition-colors hover:opacity-100 text-left border-[1px] border-transparent hover:border-sky-300 rounded-2xl ${
-        showContent ? "bg-slate-800" : ""
+        showContent ? "bg-slate-800 bg-opacity-50" : ""
       }`}
     >
       <div className="p-4">

@@ -26,8 +26,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-sky-950">
-      <div className="py-10 bg-gradient-to-b from-transparent via-[#00000033] to-[#00000080]">
+    <footer className="">
+      <div className="py-10 bg-gradient-to-b from-transparent to-sky-950">
         <div className="px-4 max-w-[84rem] mx-auto grid grid-cols-1 grid-rows-2 lg:grid-rows-1 lg:grid-cols-3">
           <ul className="nav-list flex flex-col items-center lg:items-start">
             {links.map((e, index) => {
