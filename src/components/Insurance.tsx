@@ -39,7 +39,7 @@ const Insurance = () => {
     <section className="py-10 lg:py-20 w-full" id="insurance">
       <div className="section px-4 max-w-[84rem] mx-auto grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
         <div className="text-center md:col-span-2 lg:col-auto lg:col-start-2 lg:row-start-2 lg:row-span-3">
-          <h1 className="font-semibold text-4xl lg:text-5xl xl:text-6xl text-sky-300">
+          <h1 className="font-semibold text-5xl xl:text-6xl text-sky-300">
             Seguradoras
           </h1>
           <h2 className="text-lg lg:text-xl py-4">
@@ -56,7 +56,7 @@ const Insurance = () => {
                 <button
                   title={`Saiba mais sobre Seguradoras`}
                   onClick={handleShowContent}
-                  className="w-full pb-2 flex items-center justify-between opacity-90 hover:opacity-100 leading-relaxed border-b-[1px]"
+                  className="w-full pb-2 flex items-center justify-center opacity-90 hover:opacity-100 leading-relaxed border-b-[1px]"
                   aria-expanded={showContent}
                   aria-controls={`service-content`}
                 >

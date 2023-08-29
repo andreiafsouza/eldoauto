@@ -16,6 +16,10 @@
     background: radial-gradient(at center center, rgb(12 74 110), #003153);
   }
 
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
   h1,
   h2,
   h3 {
@@ -137,4 +141,21 @@ nav button[aria-expanded="true"] {
 .section.fade {
   opacity: 1;
   transform: translateY(0px);
+}
+
+.diagonal {
+  position: relative;
+}
+
+.diagonal::after {
+  content: "";
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    #003153,
+    transparent
+  );
+  position: absolute;
+  z-index: -1;
+  inset: 0;
 }

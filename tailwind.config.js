@@ -16,9 +16,19 @@ export default {
       dropShadow: {
         text: "2px 3px 4px rgba(0,0,0,0.4)",
       },
+      boxShadow: {
+        card: "2px 5px 5px rgba(36,36,36,0.25)",
+      },
       fontFamily: {
         sans: ["source-sans-pro", "Inter", "sans-serif"],
         serif: ["Merriweather", "serif"],
+      },
+      fontSize: {
+        "clamp-title": "clamp(2rem, 8vw, 6rem)",
+        "clamp-sub": "clamp(1rem, 4vw, 3rem)",
+      },
+      screens: {
+        xs: "360px",
       },
     },
   },

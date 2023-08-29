@@ -7,6 +7,7 @@ import Navbar from "~/components/Navbar";
 import Contact from "~/components/Contact";
 import "~/styles/main.css";
 import Footer from "~/components/Footer";
+import Fab from "~/components/Fab";
 
 function Home() {
   const sectionRefs = useRef<NodeListOf<HTMLElement> | null>(null); // Ref to store section elements
@@ -89,6 +90,8 @@ function Home() {
         <About />
 
         <Contact />
+
+        <Fab />
       </main>
 
       <Footer />

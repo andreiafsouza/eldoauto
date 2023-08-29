@@ -32,9 +32,9 @@ const Services = () => {
 
   return (
     <section className="py-10 lg:py-20 w-full" id="services">
-      <div className="section max-w-[84rem] px-4 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14">
+      <div className="section max-w-[84rem] px-4 mx-auto grid gap-4 grid-cols-1 lg:grid-cols-2 lg:gap-14">
         <div className="text-center lg:text-right">
-          <h1 className="pr-2 font-semibold text-4xl lg:text-6xl text-sky-300">
+          <h1 className="pr-2 font-semibold text-5xl lg:text-6xl text-sky-300">
             Serviços
           </h1>
           <h2 className="pr-2 text-lg md:text-xl py-4">
@@ -54,7 +54,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="bg-blue bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sky-900 to-blue">
+        <div className="rounded-b-2xl bg-blue bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sky-900 to-blue">
           <img
             className="w-full h-full object-cover rounded-b-2xl mix-blend-hard-light"
             src={paintImage}
