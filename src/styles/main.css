@@ -143,11 +143,12 @@ nav button[aria-expanded="true"] {
   transform: translateY(0px);
 }
 
-.diagonal {
+.gradient {
   position: relative;
+  isolation: isolate;
 }
 
-.diagonal::after {
+.gradient::after {
   content: "";
   background-image: linear-gradient(
     to right,

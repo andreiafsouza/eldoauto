@@ -26,10 +26,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="diagonal">
+    <footer className="gradient">
       <div className="py-10">
-        <div className="px-4 max-w-[84rem] mx-auto grid grid-cols-1 grid-rows-2 lg:grid-rows-1 lg:grid-cols-3">
-          <ul className="nav-list flex flex-col items-center lg:items-start">
+        <div className="px-4 max-w-[84rem] mx-auto grid md:grid-rows-2">
+          <ul className="nav-list justify-center flex items-center">
             {links.map((e, index) => {
               return (
                 <li key={index} className="w-fit">
@@ -39,7 +39,10 @@ const Footer = () => {
             })}
           </ul>
 
-          <p className="self-end text-center">{`© ${currentYear} Todos os direitos reservados.`}</p>
+          <div className="relative pt-4 flex flex-col gap-4 justify-between text-center after:absolute after:w-[80%] after:h-[2px] after:bg-sky-300 after:top-0 after:left-[10%]">
+            <p>Av. João César de Oliveira, 5555 - Beatriz, Contagem - MG.</p>
+            <p>{`© ${currentYear} Todos os direitos reservados.`}</p>
+          </div>
         </div>
       </div>
     </footer>
