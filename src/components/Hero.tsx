@@ -2,14 +2,14 @@ import { LinkScroll } from "./Links";
 
 const Hero = () => {
   return (
-    <section className="-mt-[3.5rem]" id="home">
+    <section className="-mt-[3.5rem] " id="home">
       <div className="diagonal py-[14rem] bg-blue bg-cover bg-no-repeat bg-[url(../assets/banner-04.jpg)]">
         <div className="px-4 w-min max-w-[84rem] mx-auto sm:w-full">
           <h1 className="font-['Inter'] text-4xl xs:text-5xl lg:text-8xl font-semibold text-sky-300 drop-shadow-text">
             Lanternagem
           </h1>
           <h1 className="font-['Inter'] text-4xl xs:text-5xl lg:text-8xl font-semibold text-sky-300 drop-shadow-text">
-            <span className="text-sky-950  relative after:bg-sky-300 after:absolute after:h-[78%] after:w-full after:z-[-1] after:opacity-90 after:rounded-tr-2xl after:rounded-bl-2xl after:left-0 after:top-[11%]">{`& Pintura`}</span>
+            & Pintura
           </h1>
           <h2 className="text-xl lg:text-2xl text-sky-200 pt-2">
             Eficiência e dedicação para cuidar do seu veículo!
